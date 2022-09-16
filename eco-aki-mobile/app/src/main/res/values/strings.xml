@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">EcoAki</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="cadastro_produto">Cadastrar Produto</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="atualizar_perfil">Atualização de perfil</string>
+    <string name="pesquisar_produto">Pesquisar Produto</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="title_activity_main">Main</string>
+    <string name="title_activity_form_product">Product</string>
+</resources>

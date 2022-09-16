@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bege"
+    tools:context=".FormDetails">
+
+    <FrameLayout
+        android:id="@+id/fl_wrapper2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-63dp"
+        tools:layout_editor_absoluteY="0dp">
+        <ImageView
+            android:id="@+id/moletom_detail"
+            android:layout_width="300dp"
+            android:layout_height="243dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            app:srcCompat="@drawable/ic_moletom"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="174dp" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="Eu Quero!"
+            android:textColor="@color/green"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="Moletom Branco\nCombinar com doador\nWhatsapp:11111111"
+            android:textSize="20dp"/>
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center"
+            android:layout_marginTop="230dp"
+            />
+
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

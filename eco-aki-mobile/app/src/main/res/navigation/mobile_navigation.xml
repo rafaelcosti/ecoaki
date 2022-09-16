@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="br.com.ecoaki.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_main"
+            app:destination="@id/navigation_main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="br.com.ecoaki.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="br.com.ecoaki.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_main"
+        android:name="br.com.ecoaki.MainActivity"
+        android:label="@string/title_activity_main"
+        tools:layout="@layout/activity_main" >
+        <action
+            android:id="@+id/action_navigation_main_to_navigation_search"
+            app:destination="@id/navigation_search" />
+        <action
+            android:id="@+id/action_navigation_main_to_navigation_product"
+            app:destination="@id/navigation_product" />
+        <action
+            android:id="@+id/action_navigation_main_to_navigation_user"
+            app:destination="@id/navigation_user" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="br.com.ecoaki.ui.pesquisar.FormPesquisarFragment"
+        android:label="@string/pesquisar"
+        tools:layout="@layout/activity_form_pesquisar">
+        <Action
+            android:id="@+id/navigation_search_main"
+            app:destination="@id/form_pesquisar"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_product"
+        android:name="br.com.ecoaki.ui.product.FormProductFragment"
+        android:label="@string/title_activity_form_product"
+        tools:layout="@layout/activity_form_product">
+        <Action
+            android:id="@+id/navigation_product_main"
+            app:destination="@id/form_product"/>
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="br.com.ecoaki.ui.atualizar.FormAtualizarCadastroFragment"
+        android:label="Perfil"
+        tools:layout="@layout/activity_form_atualizar_cadastro">
+        <Action
+            android:id="@+id/navigation_user_main"
+            app:destination="@id/form_user"/>
+    </fragment>
+
+</navigation>
